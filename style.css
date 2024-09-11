@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffff;
+  margin: 0;
+}
+
+#countdown {
+  text-align: center;
+  background: #e9d7d7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#timer {
+  font-size: 2em;
+  margin-top: 20px;
+  
+}
+
+#startButton {
+  
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+#startButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+.gato
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: abajo 6s infinite;
+  z-index: 10;
+}
+.panda
+{
+  position: absolute;
+  top: 0;
+  left: 100px;
+  animation: abajo 5s infinite;
+  z-index: 10;
+}
+.conejo
+{
+  position: absolute;
+  top: 0;
+  left: 200px;
+  animation: abajo 4s infinite;
+  z-index: 10;
+}
+
+.gato1
+{
+  position: absolute;
+  top: 0;
+  left: 300px;
+  animation: abajo 4s infinite;
+  z-index: 10;
+}
+.panda1
+{
+  position: absolute;
+  top: 0;
+  left: 400px;
+  animation: abajo 5s infinite;
+  z-index: 10;
+}
+.conejo1
+{
+  position: absolute;
+  top: 0;
+  left: 500px;
+  animation: abajo 6s infinite;
+  z-index: 10;
+}
+
+.gato2
+{
+  position: absolute;
+  top: 0;
+  left: 600px;
+  animation: abajo 5s infinite;
+  z-index: 10;
+}
+.panda2
+{
+  position: absolute;
+  top: 0;
+  left: 700px;
+  animation: abajo 6s infinite;
+  z-index: 10;
+}
+.conejo2
+{
+  position: absolute;
+  top: 0;
+  left: 800px;
+  animation: abajo 4s infinite;
+  z-index: 10;
+}
+
+.gato3
+{
+  position: absolute;
+  top: 0;
+  left: 900px;
+  animation: abajo 6s infinite;
+  z-index: 10;
+}
+.panda3
+{
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  animation: abajo 5s infinite;
+  z-index: 10;
+}
+.conejo3
+{
+  position: absolute;
+  top: 0;
+  left: 1100px;
+  animation: abajo 4s infinite;
+  z-index: 10;
+}
+
+
+
+@keyframes abajo
+{
+  0%
+  {
+    transform: translateX(0);
+  }
+  100%
+  {
+    transform: translateY(650px);
+  }
+}
