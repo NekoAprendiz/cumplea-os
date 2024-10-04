@@ -44,17 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
         contador.textContent = puntos;
         moneda.play();
 
-        if (puntos === 3) {
+        if (puntos === 20) {
             capa1.style.display = 'none';
             level.play();
 
         }
-        if (puntos === 5) {
+        if (puntos === 40) {
             capa2.style.display = 'none';
             level.play();
 
         }
-        if (puntos === 7) {
+        if (puntos === 60) {
             capa3.style.display = 'none';
             level.play();
 
