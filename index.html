@@ -8,11 +8,24 @@
 
 </head>
 <body>
-     
-    <div class="lluvia">
 
-        <div class="gato">
-          <img src="lluvia/gato.png" alt="" width="100px">
+
+  <div id="feliz" class="feliz">
+      <h1 > Feliz Cumpleaños</h1>
+  </div>
+
+  <div id="regalo" class="regalo">
+  <div class="cajaA"> </div>
+  <div class="cajaR"> </div>
+  <div id="caja1A" class="caja1A"> </div>
+  <div id="caja1R" class="caja1R"> </div>
+  </div>
+     
+
+    <div id="lluvia" class="lluvia">
+
+        <div id="gato" class="gato">
+          <img id="ga" src="lluvia/gato.png" alt="" width="100px">
         </div>
         <div class="panda">
           <img src="lluvia/panda.png" alt="">
@@ -51,7 +64,44 @@
               <img src="lluvia/conejo.png" alt="">
           </div>
     </div>
+         
 
+    <div id="tarjetas" class="tarjetas">
+     <div id="corazon" class="corazon">
+         <img id="imgc" src="imagenes/corazon.jpg" alt="" width="200px" height="200px">
+         <video controls id="video" preload="auto" tabindex="0">
+          <source src="videos/beso.mp4" type="video/mp4" > 
+         </video>
+         <div id="capa1" class="capa1"></div>
+     </div>
+       <div id="camisa" class="camisa">
+       <img id="imgcam" src="imagenes/camisa.jpg" alt=""  width="200px" height="200px">
+       <video controls id="video1" preload="auto" tabindex="0">
+        <source src="videos/beso.mp4" type="video/mp4" > 
+       </video>
+       <div id="capa2" class="capa2"></div>
+       </div>
+       <div id="comida" class="comida">
+        <img id="comi" src="imagenes/cosina.jpg" alt=""  width="200px" height="200px">
+        <video controls id="video2" preload="auto" tabindex="0">
+          <source src="videos/cosina.mp4" type="video/mp4" > 
+         </video>
+        <div id="capa3" class="capa3"></div>
+       </div>
+       <div id="celebracion" class="celebracion">
+        <img id="cele" src="imagenes/celebracion.jpg" alt=""  width="200px" height="200px">
+        <video controls id="video3" preload="auto" tabindex="0">
+          <source src="videos/hola.mp4" type="video/mp4" > 
+         </video>
+        <div class="capa4"></div>
+       </div>
+    </div>
+
+    <div id="pundos" class="pundos">
+       <h1>Puntos</h1>
+       <p id="contador">0</p>
+
+    </div>
 
     <div id="countdown">
         <h1>Cuenta Regresiva</h1>
@@ -63,6 +113,125 @@
         </div>
         <button id="startButton" style="display: none;">Inicio</button>
     </div>
+    <div id="party" class="party">
+       <img id="imagen" src="fondos/party.jpg" alt="">
+
+    </div>
+
+
+    <div id="sonido" class="sonido">
+       <audio id="moneda" src="soun/collect-points.mp3"></audio>
+       <audio id="level" src="soun/level-up.mp3"></audio>
+    </div>
+
+    <script>
+      var imgc = document.getElementById('imgc');
+      var video = document.getElementById('video');
+      corazon.addEventListener('click', () => {
+        imgc.style.opacity = '0';
+         
+        setTimeout(function(){
+          video.style.zIndex ='4';
+            },2000)
+         
+      });
+      
+      </script>
+
+<script>
+  var imgcam = document.getElementById('imgcam');
+  var video1 = document.getElementById('video1');
+  camisa.addEventListener('click', () => {
+    imgcam.style.opacity = '0';
+     
+    setTimeout(function(){
+      video1.style.zIndex ='4';
+        },2000)
+     
+  });
+</script>
+
+<script>
+  var comi = document.getElementById('comi');
+  var video2 = document.getElementById('video2');
+  comida.addEventListener('click', () => {
+    comi.style.opacity = '0';
+     
+    setTimeout(function(){
+      video2.style.zIndex ='4';
+        },2000)
+     
+  });
+</script>
+
+<script>
+  var cele = document.getElementById('cele');
+  var video3 = document.getElementById('video3');
+  celebracion.addEventListener('click', () => {
+    cele.style.opacity = '0';
+     
+    setTimeout(function(){
+      video3.style.zIndex ='4';
+        },2000)
+     
+  });
+  
+  </script>
+
+   <script>
+
+      var startButton=document.getElementById('startButton')
+      var imagen = document.getElementById('imagen');
+      var regalo = document.getElementById('regalo');
+
+        startButton.addEventListener('click', () =>{
+          imagen.style.zIndex= '5';
+          imagen.style.opacity = '1';
+          feliz.style.opacity = '1';
+          regalo.style.opacity = '1';
+          feliz.style.zIndex= '6';
+          setTimeout(function(){
+            regalo.style.zIndex = '6';
+            },1000)
+        });
+
+    </script>
+
+    <script>
+     var regalo=document.getElementById('regalo');
+     var caja1A=document.getElementById('caja1A');
+     var imagen=document.getElementById('imagen');
+
+     regalo.addEventListener('click',() =>{
+      caja1A.style.transform = 'rotate(-90deg) translateY(-178px)';
+      caja1R.style.transform = 'rotate(-90deg) translateY(-182px)';
+     imagen.style.height='1820px'
+      
+
+
+      setTimeout(function(){
+        corazon.style.display = 'block';
+            },2000)
+      setTimeout(function(){
+        camisa.style.display = 'block';
+            },3000)
+      setTimeout(function(){
+        comida.style.display = 'block';
+            },4000)
+      setTimeout(function(){
+        celebracion.style.display = 'block';;
+            },1000)    
+      setTimeout(function(){
+        pundos.style.display = 'block';
+            },5500)   
+      setTimeout(function(){
+        regalo.style.opacity = '0';
+            },1000)
+      
+     })
+
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
