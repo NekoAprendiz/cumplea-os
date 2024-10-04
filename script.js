@@ -1,5 +1,5 @@
 const countdown = () => {
-    const countDate = new Date('October 5, 2024 00:00:00').getTime();
+    const countDate = new Date('september 5, 2024 00:00:00').getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -27,6 +27,42 @@ const countdown = () => {
 
 const interval = setInterval(countdown, 1000);
 
-var confettiSettings = { target: 'my-canvas' };
-var confetti = new ConfettiGenerator(confettiSettings);
-confetti.render();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contador = document.getElementById('contador');
+    const lluvia = document.getElementById('lluvia');
+    const capa1 = document.getElementById('capa1');
+    const capa2 = document.getElementById('capa2');
+    const capa3 = document.getElementById('capa3');
+    const moneda = document.getElementById('moneda');
+
+    lluvia.addEventListener('click', () => {
+        let puntos = parseInt(contador.textContent);
+        puntos++;
+        contador.textContent = puntos;
+        moneda.play();
+
+        if (puntos === 3) {
+            capa1.style.display = 'none';
+            level.play();
+
+        }
+        if (puntos === 5) {
+            capa2.style.display = 'none';
+            level.play();
+
+        }
+        if (puntos === 7) {
+            capa3.style.display = 'none';
+            level.play();
+
+        }
+    });
+});
+
+
+
+
+
